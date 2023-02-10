@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Школа английского</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="modal_window">
+    <div class="modal">
+      <p id="sending"></p>
+      <form id="modal_reg" action="">
+        <fieldset>
+          <legend>Регистрация</legend>
+          <div class="reg_div name_div">
+            <label for="name">Имя, фамилия</label>
+            <input id="name" name="name" class="reg" type="text" placeholder="Например: Дарья Садикова" required>
+          </div>
+          
+          <div class="reg_div email_div">
+            <label for="email">Почта</label>
+            <input id="email" name="email" class="reg" type="email"  placeholder="Например: dariost@yandex.ru" required>
+          </div>
+          
+          <div class="reg_div password_div">
+            <label for="password">Пароль</label>
+            <input id="password" name="password" class="reg" type="password" required minlength="6">
+          </div>  
+
+          <p class="modal_error">Введите ваше имя</p>
+          <p class="modal_error">Введите вашу почту</p>
+          <p class="modal_error">Пароль должен быть как минимум из 6 символов!</p>
+          
+          <div class="form_buttons">
+            <button id="send" type="submit" class="buttons-submit-pass">Отправить</button>
+            <button id="show" type="button" class="buttons-submit-pass">Показать пароль</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <p class="success_submit">
+    Ваши данные успешно отправлены!
+  </p>
+  <div class="wrapper">
+    <div class="container">
+      <header>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="li-menu"><a href="index.html"><img src="../img/Logo.png" class="logo" alt="Logo Enjoy The English School"></a></li>
+            <li class="li-menu"><a href="#/">О нас</a></li>
+            <li class="li-menu"><a href="#/">Enjoy</a></li>
+            <li class="li-menu"><a href="#/">Программы и цены</a></li>
+            <li class="li-menu"><a href="#/">Филиалы</a></li>
+          </ul>
+          <ul class="menu">
+            <li class="li-menu"><a href="laba9.html">Laba 9</a></li>
+            <li class="li-menu"><a href="laba10.html">Laba 10</a></li>
+            <li class="li-menu"><a href="laba11.html">Laba 11</a></li>
+            <li class="li-menu"><a href="demo.html">Demo</a></li>
+            <li class="li-menu"><a href="form.html">Форма</a></li>
+            <li class="li-menu"><a href="#/">Летний лагерь</a></li>
+            <li class="li-menu"><a href="#/">Тестирование</a></li>
+            <li class="li-menu"><a href="#/"><button class="urok">Бесплатный урок</button></a></li>
+            <li><button onclick="showModal()" class="register">Регистрация</button></li>
+          </ul>
+        </nav>
+      </header>
+      <main> 
+        <section class="banner">
+          <img src="../img/Ellipse 3.svg" class="ellipse5" alt="mini-ellipse">
+          <p class="text_group">Уроки,<br>которые<br>нравятся<br>детям</p>
+          <div class="img_shk_eng">
+            <div>
+              <img class="hello" src="../img/Frame 6.png" alt="Hello, my name is">
+              <h1 class="str1_h"><p>Школа<br>английского<br>для детей</p></h1>  
+            </div>
+            <img src="../img/Group.png" class="group" alt="EN">
+          </div> 
+          <div class="mesta">
+            <button class="location"><img src="../img/location.png" alt="location" class="location_img"><a href="#/"><p class="loc-text">Зиларт</p></a></button>
+            <button class="location_2"><img src="../img/location.png" alt="location" class="location_img"><a href="#/"><p class="loc-text">Тульская</p></a></button>
+          </div>
+          <div class="functions">
+            <img src="../img/game.png" class="game" alt="ico game">
+            <img src="../img/horse.png" class="horse" alt="ico horse">
+          </div>
+          <div class="functions_2">
+            <p class="mechanics">Игровые<br>механики</p>
+            <p class="zadachi">Логические<br>задачи</p>
+          </div>
+          <img src="../img/Vector крест.svg" class="krestik" alt="krestik">
+          <img src="../img/Line 62.svg" class="line62" alt="line">
+        </section>
+        <section class="reclama1">
+          <img src="../img/Vector.svg" class="Vector" alt="round">
+          <img src="../img/752b7c7a6d580318b39a3797d582a9e3 1.png" class="minecraft" alt="minecraft">
+          <img src="../img/Ellipse 5.svg" class="ellipse" alt="ellipse">
+          <img src="../img/Enjoy.png" class="enjoy">
+          <div class="reclama">
+            <h2 class="b_ch_shk">Больше чем просто<br>школа, меньше чем<br>развлечения</h2>
+            <img src="../img/Group.png" class="group" alt="EN">
+          </div>
+          <p class="text_enjoy">Что такое<br>Enjoy?</p>
+          <img src="../img/path.svg" class="path" alt="snake">
+          <img src="../img/Vector крест.svg" class="krest" alt="krest">
+        </section>
+        <section class="programs">
+          <h2 class="prog">Программы и цены</h2>
+          <ul class="progs_3">
+            <li class="starter"><img src="../img/Icon.png" class="img_znak" alt="img_icon">Enjoy "Starter"<br><p class="old">4-6 лет</p></li>
+            <li class="primary"><img src="../img/Icon(1).png" class="img_znak" alt="img_icon">Enjoy "Primary"<br><p class="old">6-12 лет</p></li>
+            <li class="junior"><img src="../img/Icon(2).png" class="img_znak" alt="img_icon">Enjoy "Junior"<br><p class="old">13-17 лет</p></li>
+          </ul>
+          <img src="../img/Rectangle 37502.png" class="choise" alt="choice">
+          <img src="../img/Line 82.png" class="border" alt="line">
+          <div class="cards">
+            <div class="card">
+              <div class="circle">
+                <img src="../img/Vector 4690.png" class="circle-background" alt="circle-img">
+                <img src="../img/Group.png" class="circle-img" alt="circle-img">
+                <p class="circle-t">enjoy<br>в подарок</p>
+              </div>
+              <h2 class="card-title">8 уроков</h2>
+              <button class="card-text">
+                <div class="col_1">1 170 руб<br><p class="text-t">за занятие<p></div>
+                <img src="../img/Line 83.png" class="linee" alt="line">
+                <div class="col_1">9 360 руб<br><p class="text-t">полная стоимость<p></div>
+              </button>
+              <ul>
+                <div class="prem"><img src="../img/Frame 733878001.png" class="galochka" alt="galochka"><li class="c-t">2 занятия в неделю</li></div>
+                <div class="prem"><img src="../img/Frame 733878001.png" class="galochka" alt="galochka"><li class="c-t">8 занятий каждые 4 недели</li></div>
+                <div class="prem"><img src="../img/Frame 733878001.png" class="galochka" alt="galochka"><li class="c-t">единоразовый платеж<br>без автопродления</li></div>
+              </ul>
+            </div>
+            <div class="card">
+              <h2 class="card-title">24 урока</h2>
+              <button class="card-text">
+                <div class="col_1">696 руб<br><p class="text-t">за занятие</p></div>
+                <img src="../img/Line 83.png" class="linee2" alt="line">
+                <div class="col_1">16 704 руб<br><p class="text-t">полная стоимость</p></div>
+              </button>
+              <ul>
+                <div class="prem"><img src="../img/Frame 733878001.png" class="galochka" alt="galochka"><li class="c-t">2 занятия в неделю</li></div>
+                <div class="prem"><img src="../img/Frame 733878001.png" class="galochka" alt="galochka"><li class="c-t">8 занятий каждые 4 недели</li></div>
+                <div class="prem"><img src="../img/Frame 733878001.png" class="galochka" alt="galochka"><li class="c-t">единоразовый платеж<br>без автопродления</li></div>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="circle">
+                <img src="../img/Vector 4690.png" class="circle-background" alt="circle-img">
+                <p class="circle-t-3card">-30% на год</p>
+              </div>
+              <h2 class="card-title">48 уроков</h2>
+              <button class="card-text">
+                <div class="col_1">660 руб<br><p class="text-t">за занятие</p></div>
+                <img src="../img/Line 83.png" class="linee2" alt="line">
+                <div class="col_1">31 680 руб<br><p class="text-t">полная стоимость</p></div>
+              </button>
+              <ul>
+                <div class="prem"><img src="../img/Frame 733878001.png" class="galochka" alt="galochka"><li class="c-t">2 занятия в неделю</li></div>
+                <div class="prem"><img src="../img/Frame 733878001.png" class="galochka" alt="galochka"><li class="c-t">8 занятий каждые 4 недели</li></div>
+                <div class="prem"><img src="../img/Frame 733878001.png" class="galochka" alt="galochka"><li class="c-t">единоразовый платеж<br>без автопродления</li></div>
+              </ul>
+            </div>
+            <div class="card">
+              <h2 class="card-title">64 урока</h2>
+              <button class="card-text">
+                <div class="col_1">680 руб<br><p class="text-t">за занятие<p></div>
+                <img src="../img/Line 83.png" class="linee2" alt="line">
+                <div class="col_1">42 830 руб<br><p class="text-t">полная стоимость</p></div>
+              </button>
+              <ul>
+                <div class="prem"><img src="../img/Frame 733878001.png" class="galochka" alt="galochka"><li class="c-t">2 занятия в неделю</li></div>
+                <div class="prem"><img src="../img/Frame 733878001.png" class="galochka" alt="galochka"><li class="c-t">8 занятий каждые 4 недели</li></div>
+                <div class="prem"><img src="../img/Frame 733878001.png" class="galochka" alt="galochka"><li class="c-t">единоразовый платеж<br>без автопродления</li></div>
+              </ul>
+            </div>
+          </div>
+          <a href=""><button class="proba">Попробовать бесплатно</button></a>
+          <div class="str">
+            <a href=""><img src="../img/Next.png" alt="next" class="next"></a>
+            <a href=""><img src="../img/Next2.png" alt="next" class="next"></a>
+          </div>
+        </section>
+        <section>
+          <h2 class="free">А также бесплатно для всех учеников</h2>
+          <div class="benefits">
+            <div class="row">
+              <div class="card_ben">
+                <img src="../img/Done_ring_round_light.svg" class="card-img-ben" alt="round">
+                <div class="free-for-all">
+                  <p class="card-body">Тестирование в течение всего<br>периода обучения</p>
+                </div>
+              </div>
+              <div class="card_ben2">
+                <img src="../img/calendar-tick.svg" class="card-img-ben" alt="round">
+                <div class="free-for-all">
+                  <p class="card-body">Бесплатные тематические<br>мероприятия</p>
+                </div>
+              </div>
+              <div class="card_ben3">
+                <img src="../img/mobile.png" class="card-img-ben" alt="round">
+                <div class="free-for-all">
+                  <p class="card-body">Приложение с онлайн тренажером<br>для запоминания новых слов</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card_ben4">
+                <img src="../img/monitor.svg" class="card-img-ben" alt="round">
+                <div class="free-for-all2">
+                  <p class="card-body">Платформа с интерактивными<br>упражнениями с автоматической<br>проверкой ответов и электронным<br>дневником достижений</p>
+                </div>
+              </div>
+              <div class="card_ben5">
+                <img src="../img/medal.svg" class="card-img-ben" alt="round">
+                <div class="free-for-all3">
+                  <p class="card-body">Сертификат по окончанию обучения</p>
+                </div>
+              </div>
+              <div class="card_ben6">
+                <img src="../img/discount-circle.svg" class="card-img-ben" alt="round">
+                <div class="free-for-all3">
+                  <p class="card-body">Налоговый вычет 13%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cards_s5">
+          <h2 class="process">Процесс обучения</h2>
+          <h3 class="process_text">Мы не заставляем учиться. Мы влюбляем в английский</h3>
+          <div class="cards5">
+            <div class="card_5">
+              <img src="../img/ico.png" class="card-img-top" alt="round">
+              <div class="card-t">
+                <h3>Проверенная методика</h3>
+                <p class="card-body">Кембриджская коммуникативная<br>методика - более 50% урока ученики общаются на английском.</p>
+              </div>
+            </div>
+            <div class="card_5">
+              <img src="../img/ico(1).png" class="card-img-top2" alt="triangle">
+              <div class="card-t">
+                <h3>Опытные преподаватели</h3>
+                <p class="card-body">Многолетний стаж работы с детьми - умеют найти контакт и заинтересовать обучением.</p>
+              </div>
+            </div>
+            <div class="card_5">
+              <img src="../img/ico(2).png" class="card-img-top3" alt="rhombus">
+              <div class="card-t">
+                <h3>Интерактивная платформа</h3>
+                <p class="card-body">Тематические игры, мультики и задания от Чарли вовлекают ребенка с первых минут.</p>
+              </div>
+            </div>
+            <div class="card_5">
+              <img src="../img/ico(3).png" class="card-img-top4" alt="square">
+              <div class="card-t">
+                <h3>Комплексный подход</h3>
+                <p class="card-body">Дети изучают грамматику, пополняют словарный запас и улучшают разговорные навыки.</p>
+              </div>
+            </div>
+            <div class="new-year">
+              <div class="loader_container"><span class="loader"></span></div>
+                <img src="../img/christmas-tree.png" class="img-tree" alt="tree">
+                <div class="card-t">
+                  <p>С Новым Годом!! Счастья!</p>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="background_sec7">
+          <img src="../img/Ellipse 5.svg" class="ellipse_s7" alt="ellipse">
+          <div class="section7">
+          <div class="yellow-container">
+              <img src="../img/airplane 1.png" class="airplane" alt="airplane">
+              <div class="text-travel">
+                <div class="data">
+                  <img src="../img/SunDim.png" class="sun" alt="sun">
+                  <p class="data-t">21 июня - 04 июля</p>
+                </div>
+                <h2>Мы летим в международный<br>летний лагерь!</h2>
+                <div class="buttons_s6">
+                  <button class="prosmotr">
+                    <img src="../img/play.png" class="play" alt="play">
+                    <p class="prosmotr-t">Посмотреть, как это было?</p>
+                  </button>
+                  <button class="podrobnee">Подробнее</button>
+                </div>
+              </div>
+          </div>
+          <div class="text_form">
+            <div class="text_s7">
+              <h2 class="spis">Заполните форму, чтобы<br>попасть на бесплатный<br>пробный урок</h2>
+              <h3 class="spis_1">Что будет на пробном уроке</h3>
+              <ul class="pr-ur">
+                <li class="future">Познакомим с преподавателем</li>
+                <li class="future">Определим уровень знаний</li>
+                <li class="future">Подберем программу обучения</li>
+              </ul> 
+            </div>
+            <form class="form" action="//httpbin.org/post" method="post">
+              <h4>Запишитесь на бесплатный пробный урок</h4>
+              <div class="group-f">
+                <div class="form-group">
+                  <label for="Name"></label>
+                  <input class="form-control" id="Name" placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                  <label for="phone"></label>
+                  <input class="form-control" id="phone" placeholder="Ваш номер телефона">
+                </div>
+              </div>
+              <button class="proba_2">Попробовать бесплатно</button>
+            </form>
+            <img src="../img/Saly-26.png" class="note" alt="note">
+          </div>
+          </div>
+        </section>
+
+      </main>
+      <footer class="footer">
+          <div class="cols">
+            <div class="col1">
+              <h2 class="number"><a href="tel:88000000000">8 800 000 00 00</a></h2>
+              <p class="time">Рады слышать вас с 9:00 до 21:00</p>
+              <a href=""><img src="../img/facebook.png" class="connection0" alt="icon-facebook"></a>
+              <a href=""><img src="../img/vk.png" class="connection" alt="icon-vk"></a>
+              <a href=""><img src="../img/inst.png" class="connection" alt="icon-inst"></a>
+            </div>
+            <div class="col2">
+              <ul>
+                <li class="foot-li">Политика конфиденциальности</li>
+                <li class="foot-li">Заявка на оформление договора/налоговый отчет</li>
+                <li class="foot-li">Договор-Оферта</li>
+                <li class="foot-li">Сведения об образовательной организации</li>
+              </ul>
+            </div>
+            <div class="col3">
+              <a href=""><img src="../img/App Store.png" class="application" alt="App Store"></a>
+              <a href=""><img src="../img/Google Play.png" class="application" alt="Google Play"></a>
+            </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="../js/index.js"></script>
+</body>
+</html>

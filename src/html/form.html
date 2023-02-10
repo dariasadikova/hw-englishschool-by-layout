@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+</head>
+<body>
+  <div class="modal_window">
+    <div class="modal">
+      <p id="sending"></p>
+      <form id="modal_reg">
+        <fieldset>
+          <legend>Регистрация</legend>
+          <div class="reg_div name_div">
+            <label for="name">Имя, фамилия</label>
+            <input id="name" name="name" class="reg" type="text" placeholder="Например: Дарья Садикова" required>
+          </div>
+          
+          <div class="reg_div email_div">
+            <label for="email">Почта</label>
+            <input id="email" name="email" class="reg" type="email"  placeholder="Например: dariost@yandex.ru" required>
+          </div>
+          
+          <div class="reg_div password_div">
+            <label for="password">Пароль</label>
+            <input id="password" name="password" class="reg" type="password" required minlength="6">
+          </div>  
+
+          <p class="modal_error">Введите ваше имя</p>
+          <p class="modal_error">Введите вашу почту</p>
+          <p class="modal_error">Пароль должен быть как минимум из 6 символов!</p>
+          
+          <div class="form_buttons">
+            <button id="send" type="submit" class="buttons-submit-pass">Отправить</button>
+            <button id="show" type="button" class="buttons-submit-pass">Показать пароль</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <p class="success_submit">
+    Ваши данные успешно отправлены!
+  </p>
+  <div class="wrapper">
+    <div class="container">
+      <header>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="li-menu"><a href="index.html"><img src="../img/Logo.png" class="logo" alt="Logo Enjoy The English School"></a></li>
+            <li class="li-menu"><a href="#/">О нас</a></li>
+            <li class="li-menu"><a href="#/">Enjoy</a></li>
+            <li class="li-menu"><a href="#/">Программы и цены</a></li>
+            <li class="li-menu"><a href="#/">Филиалы</a></li>
+          </ul>
+          <ul class="menu">
+            <li class="li-menu"><a href="laba9.html">Laba 9</a></li>
+            <li class="li-menu"><a href="laba10.html">Laba 10</a></li>
+            <li class="li-menu"><a href="laba11.html">Laba 11</a></li>
+            <li class="li-menu"><a href="demo.html">Demo</a></li>
+            <li class="li-menu"><a href="form.html">Форма</a></li>
+            <li class="li-menu"><a href="#/">Летний лагерь</a></li>
+            <li class="li-menu"><a href="#/">Тестирование</a></li>
+            <li class="li-menu"><a href="#/"><button class="urok">Бесплатный урок</button></a></li>
+            <li><button onclick="showModal()" class="register">Регистрация</button></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="section">
+            <form class="form_2" action="//httpbin.org/post" method="post">
+              <fieldset>
+                <legend>Регистрация</legend>
+                <div class="group_f">
+                  <div class="private">
+                    <p>Личная информация</p>
+                    <label for="Name">ФИО</label>
+                    <input type="text" class="form-control_2" id="Name" name="name" required placeholder="ФИО">
+
+                    <label for="Date">Дата рождения</label>
+                    <input type="date" class="form-control_2" id="Date" name="date" placeholder="Дата Вашего дня рождения">
+        
+                    <label for="Gender">Пол</label>
+                    <input type="text" class="form-control_2" id="Gender" name="gender" required placeholder="Ваш пол">
+
+                    <label for="Password">Пароль</label>
+                    <input type="password" class="form-control_2" id="Password" name="password" required placeholder="Введите пароль">
+                  </div>
+                  <div class="contact">
+                    <p>Контактная информация</p>
+                    <label for="Email">Почта</label>
+                    <input type="email" class="form-control_2" id="Email" name="email" required placeholder="Ваша почта">
+                  
+                    <label for="phone">Номер телефона</label>
+                    <input type="text" class="form-control_2" id="phone" name="phone" placeholder="Ваш номер телефона">
+                  
+                    <p class="contact-radio-t">Удобное время для связи</p>
+                    <div class="radio-wrap" required>
+                      <label class="radio-label">
+                        <input type="radio" name="sort" value="morning">
+                        <span>Утро</span>
+                      </label>
+                      
+                      <label class="radio-label">
+                        <input type="radio" name="sort" value="day" checked>
+                        <span>День</span>
+                      </label>
+                      
+                      <label class="radio-label">
+                        <input type="radio" name="sort" value="evening">
+                        <span>Вечер</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div><button class="proba_2f">Зарегистрироваться</button></div>
+                <input type="reset" class="reset" value="Очистить" disabled></p>
+            </fieldset>
+          </form>
+        </section>
+
+        <div class="pseudo_section">
+          <div class="pseudo_classes">
+              <dl>
+                  <dt class="description_item">Pseudo-class</dt>
+                  <dd class="description">A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.</dd>
+              </dl>
+              <ul class="pseudo_list">
+                  <li><input class="pseudo_check" type="checkbox" checked>:root</li>
+                  <li><input class="pseudo_check" type="checkbox">:link</li>
+                  <li><input class="pseudo_check" type="checkbox">:visited</li>
+                  <li><input class="pseudo_check" type="checkbox" checked>:hover</li>
+                  <li><input class="pseudo_check" type="checkbox" checked>:active</li>
+                  <li><input class="pseudo_check" type="checkbox">:focus</li>
+                  <li><input class="pseudo_check" type="checkbox">Псевдоклассы группы child</li>
+                  <li><input class="pseudo_check" type="checkbox">Псевдоклассы группы type</li>
+                  <li><input class="pseudo_check" type="checkbox">:checked</li>
+                  <li><input class="pseudo_check" type="checkbox" checked>:disabled, :enabled</li>
+                  <li><input class="pseudo_check" type="checkbox" checked>:required</li>
+              </ul>
+          </div>
+          <div class="pseudo_elements">
+              <dl>
+                  <dt class="description_item">Pseudo-element</dt>
+                  <dd class="description">A pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s).</dd>
+              </dl>
+              <ul class="pseudo_list">
+                  <li><input class="pseudo_check" type="checkbox" checked>::first-letter</li>
+                  <li><input class="pseudo_check" type="checkbox">:::first-line</li>
+                  <li><input class="pseudo_check" type="checkbox" checked>::selection</li>
+                  <li><input class="pseudo_check" type="checkbox">::marker</li>
+                  <li><input class="pseudo_check" type="checkbox" checked>::before</li>
+                  <li><input class="pseudo_check" type="checkbox" checked>::after</li>
+                  <li><input class="pseudo_check" type="checkbox" checked>::placeholder</li>
+              </ul>
+          </div>
+      </div>
+        
+      </main>
+      <footer class="footer">
+        <div class="cols">
+          <div class="col1">
+            <h2 class="number"><a href="#">8 800 000 00 00</a></h2>
+            <p class="time">Рады слышать вас с 9:00 до 21:00</p>
+            <a href=""><img src="../img/facebook.png" alt="" width="20px"></a>
+            <a href=""><img src="../img/vk.png" alt="" width="20px"></a>
+            <a href=""><img src="../img/inst.png" alt="" width="20px"></a>
+          </div>
+          <div class="col2">
+            <ul>
+              <li class="foot-li">Политика конфиденциальности</li>
+              <li class="foot-li">Заявка на оформление договора/налоговый отчет</li>
+              <li class="foot-li">Договор-Оферта</li>
+              <li class="foot-li">Сведения об образовательной организации</li>
+            </ul>
+          </div>
+          <div class="col3">
+            <a href=""><img src="../img/App Store.png" alt="" width="100px"></a>
+            <a href=""><img src="../img/Google Play.png" alt="" width="100px"></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="../js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+</head>
+<body>
+  <div class="modal_window">
+    <div class="modal">
+      <p id="sending"></p>
+      <form id="modal_reg" action="">
+        <fieldset>
+          <legend>Регистрация</legend>
+          <div class="reg_div name_div">
+            <label for="name">Имя, фамилия</label>
+            <input id="name" name="name" class="reg" type="text" placeholder="Например: Дарья Садикова" required>
+          </div>
+          
+          <div class="reg_div email_div">
+            <label for="email">Почта</label>
+            <input id="email" name="email" class="reg" type="email"  placeholder="Например: dariost@yandex.ru" required>
+          </div>
+          
+          <div class="reg_div password_div">
+            <label for="password">Пароль</label>
+            <input id="password" name="password" class="reg" type="password" required minlength="6">
+          </div>  
+
+          <p class="modal_error">Введите ваше имя</p>
+          <p class="modal_error">Введите вашу почту</p>
+          <p class="modal_error">Пароль должен быть как минимум из 6 символов!</p>
+          
+          <div class="form_buttons">
+            <button id="send" type="submit" class="buttons-submit-pass">Отправить</button>
+            <button id="show" type="button" class="buttons-submit-pass">Показать пароль</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <p class="success_submit">
+    Ваши данные успешно отправлены!
+  </p>
+  <div class="wrapper">
+    <div class="container">
+      <header>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="li-menu"><a href="index.html"><img src="../img/Logo.png" class="logo" alt="Logo Enjoy The English School"></a></li>
+            <li class="li-menu"><a href="#/">О нас</a></li>
+            <li class="li-menu"><a href="#/">Enjoy</a></li>
+            <li class="li-menu"><a href="#/">Программы и цены</a></li>
+            <li class="li-menu"><a href="#/">Филиалы</a></li>
+          </ul>
+          <ul class="menu">
+            <li class="li-menu"><a href="laba9.html">Laba 9</a></li>
+            <li class="li-menu"><a href="laba10.html">Laba 10</a></li>
+            <li class="li-menu"><a href="laba11.html">Laba 11</a></li>
+            <li class="li-menu"><a href="demo.html">Demo</a></li>
+            <li class="li-menu"><a href="form.html">Форма</a></li>
+            <li class="li-menu"><a href="#/">Летний лагерь</a></li>
+            <li class="li-menu"><a href="#/">Тестирование</a></li>
+            <li class="li-menu"><a href="#/"><button class="urok">Бесплатный урок</button></a></li>
+            <li><button onclick="showModal()" class="register">Регистрация</button></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="section">
+          <h2 class="2d">2d animation</h2>
+          <div class="examples">
+            <div class="wrap">
+              <div class="element element-1">
+                <kbd>hello</kbd>
+              </div>
+            </div>
+            <div class="wrap">
+              <div class="element element-2">
+                <kbd>bye</kbd>     
+              </div>
+            </div>
+          </div>
+          <h2 class="threed">3d animation</h2>
+          <div class="container3d">
+            <div class="transform translate3d"></div>
+          </div>
+          <div class="container3d">
+            <div class="transform  rotateX"></div>
+          </div>
+          <h2 class="trans">Transition</h2>
+          <div class="container-tr">
+            <span class="span1">0s</span>
+            <div class="box1 box"></div>
+            <span class="span1">1s</span>
+            <div class="box2 box"></div>
+          </div>
+          <button class="b-animation"><a href="index.html"><i>Нажми, если понравилась анимация</i></a></button>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="cols">
+          <div class="col1">
+            <h2 class="number"><a href="#">8 800 000 00 00</a></h2>
+            <p class="time">Рады слышать вас с 9:00 до 21:00</p>
+            <a href=""><img src="../img/facebook.png" alt="" width="20px"></a>
+            <a href=""><img src="../img/vk.png" alt="" width="20px"></a>
+            <a href=""><img src="../img/inst.png" alt="" width="20px"></a>
+          </div>
+          <div class="col2">
+            <ul>
+              <li class="foot-li">Политика конфиденциальности</li>
+              <li class="foot-li">Заявка на оформление договора/налоговый отчет</li>
+              <li class="foot-li">Договор-Оферта</li>
+              <li class="foot-li">Сведения об образовательной организации</li>
+            </ul>
+          </div>
+          <div class="col3">
+            <a href=""><img src="../img/App Store.png" alt="" width="100px"></a>
+            <a href=""><img src="../img/Google Play.png" alt="" width="100px"></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="../js/index.js"></script>
+</body>
+</html>
